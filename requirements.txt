@@ -1,0 +1,9 @@
+# Packages con pip
+pip3 install customtkinter
+pip3 install Pillow
+
+# En caso de que siga dando error
+sudo apt install python3-pil
+sudo apt install python3-pil.imagetk
+sudo apt install python3-tk
+
