@@ -1,6 +1,6 @@
 #!/bin/bash
 PYTHON_SCRIPT="katamino.py"
-INPUT_DIR="inputs"
+INPUT_DIR="invalid_inputs"
 OUTPUT_DIR="outputs"
 mkdir -p "$OUTPUT_DIR"
 INPUT_FILES=("$INPUT_DIR"/*.txt)
