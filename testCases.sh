@@ -1,5 +1,5 @@
 #!/bin/bash
-PYTHON_SCRIPT="camposwesleygonzalfelipe.py"
+PYTHON_SCRIPT="gonzal-campos.py"
 INPUT_DIR="inputs"
 OUTPUT_DIR="outputs"
 mkdir -p "$OUTPUT_DIR"
