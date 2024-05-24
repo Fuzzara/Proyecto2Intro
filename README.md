@@ -9,7 +9,7 @@ Para probar la versión con el UI se necesita tener instalado las siguientes lib
 pip3 install customtkinter
 pip3 install Pillow
 ```
-# En caso de que siga dando error
+# En caso de error
 En tal caso de seguir teniendo errores con las librerías instalar estas otras (en caso de Ubuntu)
 ```
 sudo apt install python3-pil
