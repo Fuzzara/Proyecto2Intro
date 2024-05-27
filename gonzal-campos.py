@@ -15,7 +15,6 @@ def katamino(pieces, board):
             continue    # Continuar al siguiente row si no se encuentra una celda vacía en este row
         break       # Salir del bucle externo si se encontró una celda vacía
     for piece in pieces:
-        flag = False
         for rotation in get_children(piece):
             # Los offsets son para que la pieza no se salga del tablero
             # Funcionan de manera que mientras mas cerca esta la pieza de la derecha o abajo del tablero
@@ -33,21 +32,6 @@ def katamino(pieces, board):
                 offset_bottom += 1
                 distanceBottom += 1
             # I actually dont know how this works, but it does
-            if not flag:
-                if rotation[0][0] == '.': 
-                    flag = True
-                    offset_right += 1
-                    processedCoords = (emptyCell[0] - offset_bottom, emptyCell[1] - offset_right)
-                    if placeable(rotation, board, processedCoords):
-                        put_a_piece(rotation, board, processedCoords)
-                        pieces_copy = [p for p in pieces if p != piece]
-                        result = katamino(pieces_copy, board)
-                        if result is not None:
-                            return result
-                        remove_piece(processedCoords,rotation, board)
-                    offset_right -= 1
-                else:
-                    flag = False
             processedCoords = (emptyCell[0] - offset_bottom, emptyCell[1] - offset_right)
             '''
             print("====================DEBUG====================")
